@@ -1,0 +1,500 @@
+@media only screen and (max-width : 665px) {
+
+    body {        
+        width: 100%;
+    }
+
+
+
+    header {
+        width: 100%;
+        height: 62px;
+        background-color: rgb(73, 73, 73);
+    }
+
+    header .logo {
+        height: 100%;
+        width: 30%;
+    }
+
+    header .logo-image {
+        padding-top: 9px;
+        padding-left: 12px;
+    }
+
+    img.one {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+    }
+    
+    img.two {   
+        height: 37px;
+        width: 36px;
+        padding-top: 2px;
+        padding-left: 3px;
+    }
+
+    header .logo h1 {
+        font-size: 20px;
+        padding-top: 22px;
+        padding-left: 56px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .main-nav {
+        height: 62px;
+        width: 70.4%;
+        top: 0px;
+        left: 186px;
+    }
+
+    .main-nav .container {
+        width: 100%;
+        height: 62px;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .main-nav .container ul {
+        height: 100%;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .main-nav ul li{
+        padding: 0px;
+        height: 100%;
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-nav ul li a {
+        font-size: 19px;
+        padding-top: 30px;
+        padding-left: 0px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-nav ul li.first {
+        padding: 0px;
+        width: 47%;
+    }
+
+    .main-nav ul li img {
+        height: 23px;
+    }
+
+    .main-nav li.addBorder {
+        padding: 0px;        
+        width: 37%;
+    }
+
+    .main-nav li.addBorder a {
+        letter-spacing: 0px;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .main-nav ul li.third {
+        padding: 0px;
+        width: 41%;
+    }   
+
+    
+
+
+    
+    
+
+    .wrapper .main-nav .container li:hover {
+        height: 100%;
+    }
+
+    .wrapper .main-nav .container li:hover a {
+        padding-top: 30px;
+    }
+
+
+
+
+
+
+
+
+
+    main {
+        height: 1122px;
+    }
+
+    body .wrapper {
+        height: 387px;
+        width: 100%;
+    }
+
+    body .wrapper .player {
+        width: 100%;
+        height: 84%;
+        margin: 0px;
+    }
+
+    body .wrapper .player video {
+        width: 100%;
+        height: 100%;
+        object-position: -95px 0px;
+    }
+
+    body .wrapper .sliderButton {
+        display: none;
+    }
+
+    h1.phrase {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body .info {
+        height: 182px;
+        width: 100%;
+    }
+
+    body .info .containerInfo{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .info>.containerInfo>div {
+        border: 0;
+    }
+
+    body .info .containerInfo img {
+        height: 70px;
+        margin: 30px 0px 12px 72px;
+        padding: 0px;
+        
+    }
+
+    body .info .containerInfo .firstInfo img {
+        height: 63px;
+        margin-left: 42px;
+        margin-top: 33px;
+    }
+
+    body .info .containerInfo .firstInfo h2 {
+        margin: 4px 22px 0px 0px;
+    }
+
+    body .info h2 {
+        font-size: 23px;
+        margin-left: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    section.sectionOne>h2 {
+        display: none;
+    }
+
+    section.sectionOne>div.data {
+        display: none;
+    }
+
+    section.sectionOne>input {
+        display: none;
+    }
+
+
+
+
+    section.sectionOne {
+        width: 100%;
+        height: 472px;
+        background: none;
+    }
+
+    section.sectionOne .sectionBox {
+        width: 100%;
+        height: 49.4%;
+        margin: 0;
+    }
+
+    section.sectionOne .sectionBox .firstSectionBox {
+        height: 100%;
+        width: 46.4%;
+        margin-left: 9px;
+        margin-right: 0px;
+    }
+
+    section.sectionOne .sectionBox .firstSectionBox img {
+        margin-left: 93%;
+        position: relative;
+        bottom: 36px;
+    }
+
+    section.sectionOne .sectionBox .firstSectionBox p {
+        height: 196px;
+        font-size: 29px;
+        letter-spacing: 0px;
+        line-height: 34px;
+        font-weight: 100;
+        padding: 17px 15px 24px 31px;
+        word-break: break-all;        
+    }
+
+    section.sectionOne .sectionBox .secondSectionBox {
+        margin-right: 0px;
+        margin-left: 8px;
+    }
+
+    section.sectionOne .sectionBox .thirdSectionBox {
+        margin-top: 243px;
+        position: absolute;
+        height: 230px;
+        width: 100%;
+        background-color: #f5c607;
+    }
+
+    section.sectionOne .sectionBox .thirdSectionBox img.plus {
+        display: none;
+    }
+
+    section.sectionOne .sectionBox .thirdSectionBox p {
+        display: none;
+    }
+
+    
+
+    .sectionBox .thirdSectionBox img.twitter {
+        margin: 0px 10px 25px 80px;
+    }
+
+    section .thirdSectionBox .mobileTwitterMessages {
+        display: inline-block;
+        height: 95%;
+        width: 49%;
+        margin-left: 60px;
+    }
+
+    section.sectionOne .thirdSectionBox .mobileTwitterMessages p {
+        display: inline-block;
+        height: 100%;
+        width: 240px;
+        font-size: 14px;
+        margin: 0;
+        padding: 8px 0px 15px 18px;
+        color: #b4b4b4;
+        line-height: 15px;
+    }
+
+    section .mobileTwitterMessages .firstMessage {
+        width: 89%;
+        height: 20%;
+        margin-top: 7%;
+        margin-left: 4%;
+        background-color: #ffffff;
+        border-radius: 12px;
+    }
+
+    section .mobileTwitterMessages .secondMessage {
+        width: 89%;
+        height: 20%;
+        margin-top: 3.4%;
+        margin-left: 4%;
+        background-color: #fdeeb5;
+        border-radius: 12px;
+    }
+
+    section .mobileTwitterMessages .thirdMessage {
+        width: 89%;
+        height: 20%;
+        margin-top: 4%;
+        margin-left: 4%;
+        background-color: #fbe89c;
+        border-radius: 12px;
+    }
+
+
+
+
+
+
+
+
+    .mobileTwitterMessages form {
+        height: 27px;
+        margin-top: 13px;
+        margin-left: 18px;
+        width: 88%;
+        
+    }
+
+    .mobileTwitterMessages form input[type="text"] {
+        height: 100%;
+        width: 73%;
+        border: 1px solid #c5a804;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .mobileTwitterMessages form input[type="submit"] {
+        height: 115%;
+        width: 25%;
+        color: white;
+        background-color: #eba126;
+        border: 1px solid #c5a804;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+    section.sectionTwo {
+        width: 100%;
+        height: 468px;
+    }
+
+    section.sectionTwo h2 {
+        width: 97%;
+        padding-top: 33px;
+        padding-left: 17px;
+        font-size: 41px;
+        letter-spacing: 1.1px;
+    }
+
+    section.sectionTwo ul {
+        display: none;
+    }
+
+    section.sectionTwo .blockImages {
+        margin-left: 56px;
+        margin-top: 24px;
+    }
+
+    section.sectionTwo .circle {
+        top: 1160px;
+        left: 26px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        width: 100%;
+        height: 44px;
+    }
+
+    footer .logo-imageFooter {
+        padding-left: 65px;
+        height: 38px;
+    }
+
+    footer .logo-imageFooter img#one {
+        height: 33px;
+        width: 33px;
+    }
+    
+    footer .logo-imageFooter img#two {
+        margin-left: -31px;
+        height: 29px;
+        width: 29px;
+    }
+
+    footer h1.footer {
+        font-size: 17px;
+        padding-top: 13px;
+        padding-left: 0px;
+    }
+
+}

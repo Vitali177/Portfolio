@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+hr {    
+    border: 0;
+    height: 1.5px;  
+    width: 32px;
+    background-color: $default--orange;      
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}

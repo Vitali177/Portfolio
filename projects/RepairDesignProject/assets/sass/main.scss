@@ -1,0 +1,25 @@
+$default--orange: #E3B873;
+
+@import "reset/mini_reset.scss";
+
+@import "fonts/main_fonts.scss";
+
+@import "mixins/header_footer.scss";
+@import "mixins/name_with_logo.scss";
+@import "mixins/three_same_columns.scss";
+@import "mixins/interactive_arrows_with_circles";
+@import "mixins/form.scss";
+
+@import "blocks/header_footer.scss";
+@import "blocks/first_page.scss";
+@import "blocks/second_block.scss";
+@import "blocks/youtube_video.scss";
+@import "blocks/request_block.scss";
+@import "blocks/repair_types.scss";
+@import "blocks/circle_with_form.scss";
+@import "blocks/fantasy_images.scss"; 
+@import "blocks/design_project.scss";
+@import "blocks/steps.scss"; 
+@import "blocks/clients.scss"; 
+@import "blocks/form_questions.scss"; 
+@import "blocks/map.scss"; 

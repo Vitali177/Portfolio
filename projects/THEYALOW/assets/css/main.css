@@ -1,0 +1,733 @@
+@font-face {
+    font-family: 'Segoe WP';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/SegoeWP.ttf'), url('../fonts/SegoeWP.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Lucida Sans Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/LucidaSans.woff2'), url('../fonts/LucidaSans-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/SegoeUI-Light.woff2'), url('../fonts/SegoeUI-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Pt Sans Narrow';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/'), url('../fonts/PTSans-Narrow.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/'), url('../fonts/opensans.woff2') format('woff2');
+}
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body .wrapper {
+    width: 100%;
+    height: 566px;
+    background: url('../img/Layer20.png') no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+.logo-image {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    padding-top: 28px;
+    padding-left: 139px;
+}
+
+img.one {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+}
+
+img.two {   
+    height: 80px;
+    width: 79px;
+    padding-top: 2px;
+    padding-left: 3px;
+}
+
+
+
+
+
+
+
+
+.logo h1 {
+    padding-top: 50px;
+    padding-left: 225px; 
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 0.45px;
+    color: #ffffff; 
+    
+    width: 300px;
+    font-family: "Lucida Sans Italic";
+    font-style: italic;
+}
+
+.main-nav {
+    position: absolute;
+    top: 68px;
+    left: 698px;
+    width: 464px;
+    height: 45px; 
+}
+
+.container {
+    width: 454px;
+    height: 42px;
+    margin-top: 2px;
+    margin-left: 8px;
+    background-color: #f5c506;
+    box-shadow: -4px -5px 0px 0px rgba(245, 197, 6, 0.425),
+    -8px -8px 0px 0px rgba(245, 197, 6, 0.233);   
+}
+
+.main-nav ul {
+    height: 100%;
+    display: flex;
+    list-style-type: none; 
+}
+
+.main-nav ul li{
+    height: 42px;
+    padding: 0;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #9b7d08;
+    font-family: 'Segoe WP';
+    font-size: 17px;
+    padding-left: 0px;
+    padding-top: 9px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-nav li img {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.main-nav li.first {
+    width: 174px;
+}
+
+.main-nav li.first a {
+    padding-left: 11px;
+}
+
+.main-nav .addBorder {
+    padding-top: 0px;  
+    width: 132px;
+    border-left: 1px solid #dcb105;
+    border-right: 1px solid #dcb105;
+}
+
+
+.main-nav li.third {
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.player {
+    height: 327px;    
+    width: 549px;    
+    margin-top: 72px;
+    margin-left: 149px;
+}
+
+video{
+    object-fit: none;
+    object-position: -150px 0px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 549px; 
+    height: 327px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.wrapper h1.phrase {
+    position: absolute;
+    height: 221px;
+    width: 403px; 
+    margin-left: 749px;
+    top: 245px;
+    padding: 0px;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: 1px;   
+    color: white;
+    font-family: 'Asap'; 
+}
+
+.wrapper h1 span {
+    color: #f5c506;
+    padding: 0px 0px 20px 40px;
+    letter-spacing: 1px;
+ }
+
+ .wrapper .sliderButton {
+    position: absolute;
+    top: 297px;
+    height: 58px;
+    width: 32px;
+    background-color: #cca60c;
+ }
+
+ .wrapper .rightSliderButton {
+    margin-left: 1268px;
+    background-color: #f5c506;
+    transform: rotate(180deg);
+}
+
+ .wrapper .sliderButton img {
+    margin: 20px 11px 18px 8px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ main {
+    width: 100%;
+    height: 1217px;
+ }
+
+ .info {
+    height: 212px;
+    background: url('../img/Layer 7.png');
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px  1px 5px 0px rgba(0,0,0,0.5);
+}
+
+ .info>.containerInfo {
+    height: 100%;
+    margin: 0px 139px;
+    display: flex;
+    border-right: 1px solid #d4d4d4;
+ }
+
+ .info>.containerInfo>div {
+    height: 100%;
+    border-left: 1px solid #d4d4d4;
+    width: 33.2%; 
+ }
+
+.info h2 {
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+}
+
+.info .firstInfo img {
+    margin-top: 60px;
+    padding-bottom: 7px;
+    margin-left: 111px;
+}
+
+.info .secondInfo img {
+    margin-top: 38px;
+    margin-left: 133px;
+    padding-bottom: 8px;
+}
+
+.info .thirdInfo img {
+    margin-top: 52px;
+    margin-left: 118px;
+    padding-bottom: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.sectionOne {
+    height: 509px;
+    background: url('../img/Layer 10 copy 3.png');
+}
+
+section.sectionOne>h2 {
+    width: 918px;
+    height: 79px;
+    font-size: 37px;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 32px;
+    padding-left: 141px;
+}
+
+section.sectionOne>.sectionBox {
+    margin-left: 139px;
+    margin-right: 142px;
+    height: 231px;
+    display: flex;
+}
+
+section.sectionOne>.sectionBox>.firstSectionBox {
+    background-color: #ec9e03;
+    height: 100%;
+    width: 340px;
+}
+
+
+
+
+
+
+
+section.sectionOne>.sectionBox>.firstSectionBox:hover {
+    position: relative;
+    bottom: 10px;
+    height: 110%;
+    width: 370px;
+}
+
+section.sectionOne>.sectionBox>.firstSectionBox:hover p{
+    font-size: 2.3em;
+    line-height: 45px;
+}
+
+
+
+
+section.sectionOne>.sectionBox>.thirdSectionBox:hover img.twitter {
+    margin-top: -20px;
+    height: 165px;
+    width: 165px;
+} 
+
+section.sectionOne>.sectionBox>.thirdSectionBox:hover  {
+    background-color: rgb(240, 102, 22);
+} 
+
+
+
+
+
+
+
+
+
+section.sectionOne>.sectionBox>.firstSectionBox p {
+    height: 164px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    padding: 17px 15px 24px 31px;
+    /*word-break: break-all;*/
+}
+
+section.sectionOne>.sectionBox>.firstSectionBox>img {
+    margin-left: 315px;
+}
+
+section.sectionOne>.sectionBox>.secondSectionBox {
+    height: 100%;
+    width: 316px;
+    margin-right: 34px;
+}
+
+.sectionBox>.secondSectionBox video {
+    object-position: -30px 0px;
+}
+
+section.sectionOne>.sectionBox>.thirdSectionBox {
+    height: 100%;
+    background-color: #ec9e03;
+    width: 330px;
+}
+
+section.sectionOne>.sectionBox>.thirdSectionBox p {
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    margin-left: 286px;
+    margin-top: 8px;
+}
+
+section .thirdSectionBox .mobileTwitterMessages {
+    display: none;
+}
+
+section .thirdSectionBox>img.twitter {
+    margin-left: 84px;
+    margin-top: 11px;
+}
+
+section.sectionOne>.sectionBox>.thirdSectionBox>img.plus {
+    margin-left: 310px;
+    margin-top: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.sectionOne>.data {
+    height: 86px;
+    width: 113px;
+    background-color: #ddb101;
+    margin-left: 139px;
+    text-align: center;
+}
+
+section.sectionOne>.data p {
+    font-size: 51px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    padding-top: 19px;
+}
+
+section.sectionOne>.data span {
+    font-size: 21px;
+    letter-spacing: 0px;
+    color: #b26529;
+    font-family: "Segoe UI";
+}
+
+section.sectionOne>#roundedRectangle {
+    height: 15px;
+    width: 896px;
+    background-color: #ffffff;
+    opacity: 0.48;
+    margin-top: 44px;
+    margin-left: 213px;
+    border-radius: 7px;
+}
+
+section.sectionOne>#roundedRectangle>#centerRoundedRectangle {
+    opacity: 1.0;
+    height: 100%;
+    width: 197px;
+    border-radius: 7px;
+    background-color: #ec9e03;
+    margin-left: 247px;    
+}
+
+section.sectionOne .secondSectionBox video {
+    margin-right: 33px;
+    object-fit: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.sectionTwo {
+    height: 495px;
+    width: 100%;
+    background-color: #4c4c4c;
+}
+
+section.sectionTwo h2 {
+    width: 918px;
+    height: 101px;
+    font-size: 43px;
+    letter-spacing: 0.5px;
+    color: #f5c506;
+    font-family: "Pt Sans";
+    font-weight: 400;
+    padding-top: 35px;
+    padding-left: 350px;
+}
+
+section.sectionTwo .blockImages {
+    margin-left:  158px;
+    height: 300px;
+}
+
+section.sectionTwo .blockImages img.second{
+    margin-left:  20px;
+    margin-bottom: 40px;
+}
+
+section.sectionTwo .blockImages img.third{
+    margin-left:  20px;
+    margin-bottom: 40px;
+}
+
+section.sectionTwo .circle {
+    height: 117px;
+    width: 117px;
+    border-radius: 100%;
+    background-color: #f5c506;
+
+    position: absolute;
+    top: 1380px;
+    left: 137px;
+
+}
+
+section.sectionTwo .circle p {
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Pt Sans Narrow";
+    font-weight: 700;
+    padding-top: 49px;
+    padding-left: 6px;
+    
+}
+
+section.sectionTwo ul {
+    float: right;
+    width: 462px;
+    height: 305px;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-weight: 400;
+    margin-right: 27px;
+    margin-top: 49px;    
+}
+
+section.sectionTwo ul li {
+    padding-bottom: 23px;    
+    line-height: 23.4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 64px;
+    width: 100%;
+    background-color: #4c4c4c;
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+    
+}
+
+footer .logo-imageFooter {
+    padding-top: 5px;
+    padding-left: 139px;
+    padding-bottom: 0px;
+    height: 60px;
+}
+
+footer .logo-imageFooter img#one {
+    height: 56px;
+    width: 56px;
+}
+
+footer .logo-imageFooter img#two {
+
+    position: absolute;
+    margin-left: -54px;
+    margin-top: 2px;
+    height: 52px;
+    width: 52px;
+}
+
+footer  h1.footer {
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    padding-top: 18px;
+    padding-left: 129px;
+}
+
+
+
+
+
+.wrapper .main-nav .container li:hover {
+    height: 88%;
+    border: 3px solid #ec9e03;
+}
+
+.wrapper .main-nav .container li:hover a {
+    padding-top: 5px;
+    color: red;
+}
+
+.wrapper .main-nav .container li a:visited {
+    color: purple;
+} 
+
+
+
+
+
+
+
+input[type=range] {
+    background: inherit;
+    height: 16px;
+    -webkit-appearance: none;
+    margin: 43px 0px 0px 210px;
+    width: 69%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 16px;
+    cursor: pointer;
+    background: #FAE283;
+    border-radius: 50px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    height: 16px;
+    width: 198px;
+    border-radius: 50px;
+    background: #EC9E03;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 0px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #FAE283;
+  }

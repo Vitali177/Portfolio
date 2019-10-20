@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <iframe src="index.html"class="desktop" width="100%" height="1860" frameborder="0"></iframe>
+
+        <button class="button-mobile_desktop">MOBILE</button>
+    
+        <button class="button-back"><a href="../../index.html">BACK</a></button>
+    
+    </div>    
+    
+    <style>
+
+    body {
+        margin: 0;
+    }
+
+    .wrapper-mobile {
+        padding-left: calc((100% - 640px) / 2);
+    }
+
+    iframe.mobile {
+        width: 640px;
+        height: 1570px;
+    }   
+
+    button {
+        height: 80px;
+        width: 80px;
+        margin: 0;
+        padding: 0;
+
+        position: fixed;
+        left: 80%;
+
+        cursor: pointer;
+        color: purple;
+    }
+    
+    button.button-mobile_desktop {            
+        top: 500px;           
+    }
+
+    button.button-back {
+        top: 650px;            
+    }
+
+    button.button-back a {
+        box-sizing: border-box;
+        padding-top: 30px;
+
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: purple;
+    }
+
+    @media only screen and (max-width: 750px) {
+
+        button.button-mobile_desktop {
+            display: none;
+        }
+    }
+
+    </style>
+
+    <script>
+    
+    var wrapper = document.querySelector('.wrapper');
+    var mobileButton = document.querySelector('.button-mobile_desktop');
+    var iframe = document.querySelector('iframe');
+
+    mobileButton.addEventListener('click', function() {
+
+        if (iframe.className === 'desktop') {
+
+            mobileButton.innerHTML = 'DESKTOP';
+
+            wrapper.classList.add('wrapper-mobile');
+
+            iframe.classList.remove('desktop');
+            iframe.classList.add('mobile');
+
+        } else {
+
+            mobileButton.innerHTML = 'MOBILE';
+
+            wrapper.classList.remove('wrapper-mobile');
+
+            iframe.classList.remove('mobile');
+            iframe.classList.add('desktop');
+        }      
+    });
+
+    </script>
+    
+</body>
+</html>

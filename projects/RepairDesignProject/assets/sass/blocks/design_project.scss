@@ -1,0 +1,91 @@
+.design_project {  
+
+    width: 100%;
+    height: 622px;
+    background-color: #FFFFFF;
+
+
+    .name--with--logo {
+
+        @include name_with_logo();
+
+        padding-top: 155px;
+    }
+
+    p {
+        margin: 24px auto 20px;
+        width: 53%;
+        height: 16%;
+        font-family: 'FuturaBookC';
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+
+        color: #363636;
+    }
+
+    .three--columns {
+
+        @include three_same_columns();
+
+        height: 735px;
+
+        margin: 0px auto 0px;
+
+        .column .block--list h3 {
+            margin-bottom: 15px;
+        }
+
+        .column .block--list--first {
+            height: 237.4px;
+        }
+
+        .column .block--list--second {
+            height: 313px;
+        }
+
+        .column .block--list--third {
+            height: 441px;
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+
+        height: 3000px;
+        background-color: #131313;
+
+        position: relative;
+        bottom: 185px;
+
+        .name--with--logo {
+            padding-top: 220px;              
+        } 
+        
+        >p, .name--with--logo h3{
+            color: #FFFFFF;
+        }        
+
+        >p {
+            width: 70%;
+            height: 5%;
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        height: 2770px;
+
+        bottom: 225px;
+
+        background-color: #131313;
+
+        .name--with--logo {
+            padding-top: 130px;              
+        } 
+
+        >p {
+            font-size: 15px;
+            width: 80%;
+        }
+    }
+}

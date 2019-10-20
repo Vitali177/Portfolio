@@ -1,0 +1,77 @@
+@mixin form {
+
+    h3 {
+        margin-top: 34.4px;
+        margin-bottom: 45.8px;
+
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    label {
+        display: block;
+        font-family: 'FuturaBookC';
+        font-size: 15px;
+        line-height: 20px;
+
+        color: rgba(255, 255, 255, 0.5);
+
+        &.checkbox {
+            display: initial;
+        }
+    }
+
+    input {
+        display: block;
+        margin-bottom: 10%;
+        width: 85%;
+        
+
+        background: initial;
+        border: 0;
+
+        font-family: 'FuturaMediumC';
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+
+        &#email {
+            margin-bottom: 2%;
+        }
+
+        &[type="checkbox"] {
+            display: initial;
+            width: initial;
+        }
+
+        &[type="button"] {
+            height: 51px;
+            width: 213px;
+            margin: 0 0 0 40%;
+
+            background: $default--orange;
+            box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+            font-family: 'FuturaDemiC';
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+
+        }
+
+        &::placeholder {
+            color: #FFFFFF;
+        }
+    }
+}

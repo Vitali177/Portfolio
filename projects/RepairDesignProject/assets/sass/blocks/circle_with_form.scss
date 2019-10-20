@@ -1,0 +1,85 @@
+.circle_with_form {
+    width: 100%;
+    height: 1090.4px;
+    
+    display: flex;
+    align-items: center;
+
+    background-color: #FFFFFF;
+
+    .circle {
+        height: 691.2px;
+        width: 54%;
+
+        display: flex;
+        
+        background: url('../img/circle_background.svg') 100% 100% no-repeat;
+        background-size: cover;
+
+        .ellipse {  
+            width: 80%;
+            height: 90%;
+            border-radius: 50%;
+
+            position: relative;
+            right: 100px;
+            top: 50px;
+           
+            border: 3px solid $default--orange;
+        }
+
+        ul {
+            position: absolute;
+            left: 15%;
+            top: 3950px;
+        }
+
+        ul li {
+            margin-bottom: 110px;
+
+            font-family: 'FuturaMediumC';
+            font-size: 18px;
+            line-height: 21px;
+            
+            color: #363636;
+        }
+    }
+
+    form {
+        box-sizing: border-box;
+        width: 506px;
+        height: 509px;
+
+        padding-left: 3%;
+
+        background-color: #131313;
+
+        @include form;
+
+
+        .discount {
+            position: absolute;
+            top: 4450px;
+
+            display: flex;
+            align-items: center;
+
+            p {
+                width: 344px;
+                height: 47px;
+
+                font-family: 'FuturaDemiC';
+                font-size: 20px;
+                line-height: 25px;
+
+                color: $default--orange;
+
+                text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        display: none;
+    }
+}

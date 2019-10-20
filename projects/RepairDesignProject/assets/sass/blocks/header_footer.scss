@@ -1,0 +1,13 @@
+header {
+    height: 83px;
+    @include header_footer;    
+}
+
+footer {
+    height: 133px;
+    @include header_footer; 
+    
+    @media only screen and (max-width: 650px) {
+        display: none;
+    }
+}

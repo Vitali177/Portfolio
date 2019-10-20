@@ -1,0 +1,236 @@
+.request_block {
+    width: 100%;
+    height: 643px;
+    background-color: #FFFFFF;
+    hr {
+        width: 55px;
+        margin: 279.5px auto 34px;
+    }
+  
+    p {
+        width: 48.5%;
+        height: 225px;
+        margin: 0 auto;
+        font-family: 'FuturaBookC';
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+
+        color: #363636;
+
+        @media only screen and (max-width: 1200px) {
+            height: 300px;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            height: 350px;
+            font-size: 18px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            width: 70%;
+            height: 300px;            
+        }
+
+        @media only screen and (max-width: 650px) {
+            width: 90%;
+            font-size: 17px;
+        }
+        @media only screen and (max-width: 400px) {
+            font-size: 14px;
+        }
+  
+    }
+
+    .form_group {
+        height: 51px;
+        width: 769px;
+        margin: 75px auto 0px;
+        
+        label {
+            position: relative;
+            bottom: 28px;
+
+            font-family: 'FuturaBookC';
+            font-size: 15px;
+            line-height: 20px;
+
+            color: rgba(54, 54, 54, 0.5);
+        }
+
+        label[for="phone"] {            
+            margin-left: 253px;            
+        }
+
+        input {
+            border: 0;
+            height: 25px;
+            width: 230px;
+            margin-top: 25px;
+
+            font-family: 'FuturaBookC';
+            font-size: 18px;
+            line-height: 24px;
+            border-bottom: 1px solid rgba(54, 54, 54, 0.3); 
+
+            color: #363636;
+
+            &::placeholder {
+                color: #363636;
+            }
+        }
+
+        input[type="text"] {
+            margin-left: -335px;
+        }
+
+        input[type="tel"] {
+            margin-left: 58px;
+        }
+
+        input[type="button"] {
+            height: 51px;
+            width: 200px;
+            margin: 0;
+
+            position: relative;
+            bottom: 13px;
+            left: 43px;
+
+            background-color: $default--orange;
+            border: 0;
+            border-radius: 2px;
+
+            font-family: 'FuturaDemiC';
+            font-size: 15px;
+            line-height: 26px;
+            /* identical to box height */
+
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+
+            
+        }
+
+        @media only screen and (max-width: 800px) {
+            height: 300px;
+            width: 60%;
+            margin-top: 0;
+
+            @include form;
+
+            label, input {
+                position: static;
+            }
+
+            label[for="name"] {
+                margin-left: 8%;
+                padding-top: 44px;
+                height: 44px;
+                box-sizing: border-box;
+            }
+
+            label[for="phone"] {
+                position: relative;
+                top: 76px;
+                right: 210px;
+
+                @media only screen and (max-width: 450px) {
+                    right: 219px;
+                }
+            }
+
+            input#name {
+                margin: 0 auto 50px;
+            }
+
+            input[type="tel"] {
+                margin: 0 auto 50px;
+            }
+
+            input[type="button"] {
+                position: static;
+                width: 40%;
+                margin: 0 auto;
+
+                @media only screen and (max-width: 650px) {
+                    width: 50%;
+                } 
+
+                @media only screen and (max-width: 450px) {
+                    width: 90%;
+                } 
+            }
+
+            background-color: #131313;
+        }
+
+        @media only screen and (max-width: 650px) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: 550px) {
+            width: 90%;
+        }
+
+        @media only screen and (max-width: 450px) {
+            width: 100%;
+
+            input[type="button"] {
+                position: relative;
+                top: 60px;
+                left: 0%;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .checkbox {
+        height: 18px;
+        width: 285.6px;
+
+        margin: 40px auto 0;
+
+        input {
+            background-color: $default--orange;
+        }
+
+        label {
+            margin-left: 10px;
+            font-family: 'FuturaBookC';
+            font-size: 16px;
+            line-height: 22px;
+
+            color: #181818;
+        }
+
+        @media only screen and (max-width: 800px) {
+            position: relative;
+            bottom: 160px;
+            right: 5%;
+
+            label {
+                color: white;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        background-color: #131313;
+        position: relative;
+        bottom: 280px;
+
+        >p {
+            padding-top: 280px;
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        >hr {
+            position: relative;
+            top: 280px;
+        }
+    }    
+}

@@ -1,0 +1,123 @@
+form.questions {
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    width: 61.3%;
+    height: 445.3px;
+    position: absolute;
+    top: 9156px;
+    left: 19.35%;
+
+
+    background-color: #131313;
+
+    @include form;
+
+    input {
+        width: 45%;
+
+        &[type="tel"], &[type="text"] {
+            display: initial;
+        }
+
+        &[type="checkbox"] {
+            margin: 0 2% 40px 27%;
+        }
+
+        &#question {
+            display: initial;
+            width: 98%;
+        }
+
+        &[type="button"] {
+            margin: 0 auto 34.4px;
+        }
+    }
+
+    label[for="phone"] {
+        display: initial;
+        position: relative;
+        bottom: 23px;
+        left: 41px;
+    }
+
+    label.checkbox {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 750px) {
+        top: 10125px;
+        width: 100%;
+        height: 720px;
+        left: 0;
+
+        h3 {
+            margin-bottom: 66px;
+        }
+
+        input {
+
+            width: 98%;
+            line-height: 30px;
+            margin-bottom: 20%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+            &[type="tel"], &[type="text"] {
+                display: block;
+            }
+
+            &[type="button"] {
+                margin: 50px auto 34.4px;
+                width: 75%;
+                font-size: 15px;
+            }
+
+            &#question {
+                margin-bottom: 5%;
+            }
+
+            &[type="checkbox"] {
+                margin: 0 1% 40px 0;
+            }
+        }
+
+        label[for="phone"] {
+            bottom: 0;
+            left: 0;
+        }
+
+        label.checkbox {
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        height: 900px;
+        
+        h3 {
+            margin-top: 100px;
+        }
+
+        input {
+            margin-bottom: 23%;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+
+        margin-top: -69%;
+        
+        input {
+            margin-bottom: 42%;
+
+            &[type="button"] {
+                width: 100%;
+            }
+        }
+    }    
+}

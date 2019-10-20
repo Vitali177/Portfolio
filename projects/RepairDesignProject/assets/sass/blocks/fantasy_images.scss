@@ -1,0 +1,145 @@
+.fantasy_images {
+    width: 100%;
+    height: 864px;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url('../img/image 5.1.jpg') 100% 100% no-repeat;
+    background-size: cover;
+
+    h2 {
+        width: 28.5%;
+        height: 66px;
+        margin-left: 6.9%;
+        padding-top: 95px;
+
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 37px;
+        text-transform: uppercase;    
+        color: $default--orange;
+    }
+
+    ul {
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 6.9%;
+        list-style-type: none;
+    }
+
+    ul li {        
+        font-family: 'Proxima Nova';
+        font-size: 20px;
+        line-height: 34px;
+        padding-top: 16px;
+
+        color: #FFFFFF;
+
+        &.selected {
+            color: $default--orange;
+            border-bottom: 1px solid $default--orange;
+            display: inline-block;
+        }
+    }
+
+    img.mobile {
+        display: none;
+    }
+
+    .image--block {
+        height: 100%;
+        width: 52.2%;
+        margin-left: 40%;
+        margin-top: -758px;
+
+        img {            
+            width: 47%;
+            position: relative;            
+        }
+
+        img.first {
+            height: 566.6px;
+            bottom: 42px;
+        }
+
+        img.second {
+            height: 275px;
+            padding-left: 5.3%;
+            bottom: 400px;
+        }
+
+        img.third {
+            height: 349.5px;
+            bottom: 288px;
+        }
+
+        img.fourth {
+            height: 625.2px;
+            padding-left: 5.3%;
+            bottom: 367px;
+        }
+
+        @media only screen and (max-width: 1100px) {
+
+            width: 60%;
+            
+            img.second, img.fourth {
+                padding-left: 2.3%;
+            }
+        }
+    } 
+    
+    @media only screen and (max-width: 750px) {
+
+        width: 95%;
+        height: 450px;
+        margin: 0 auto;
+
+        z-index: 1;
+        position: relative;
+
+        background: url('../img/image 5.1.jpg') 100% 100% no-repeat;
+        background-size: 560px;
+        background-position: bottom;
+
+        img, ul {
+            display: none;
+        }
+
+        h2 {
+            position: relative;
+            bottom: 35px;
+
+            width: 55%;
+            height: 115px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width: 550px) {
+        h2 {
+            width: 75%;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        background-size: 350px;
+        background-position: center;        
+    }
+
+    @media only screen and (max-width: 425px) {
+
+        img.mobile {
+            top: 178px;
+
+            &.left {
+                left: 6%;
+            }
+
+            &.right {
+                left: 73%;
+            }            
+        }
+    }
+}

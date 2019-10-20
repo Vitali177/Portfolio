@@ -1,0 +1,116 @@
+@mixin header_footer {
+    width: 100%;
+    background-color: #131313;
+
+    padding-left: 5.1%;
+    padding-right: 4%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-family: 'FuturaDemiC';
+        display: inline;
+        font-size: 14px;
+        line-height: 16px;
+        color: $default--orange;
+        text-transform: uppercase;
+        
+
+        @media only screen and (max-width: 400px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    p {
+        flex-grow: 0.1;
+        font-family: 'FuturaDemiC';
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        text-decoration-line: underline;
+
+        color: $default--orange;
+
+        @media only screen and (max-width: 650px) {
+            color: #FFFFFF;
+            text-decoration-line: none;
+        }
+
+        @media only screen and (max-width: 400px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    input {
+        height: 37px;
+        width: 11.2%;
+        min-width: 115px;
+
+        font-family: 'FuturaDemiC';
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+
+        background-color: $default--orange;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+        color: #FFFFFF;
+        border: 0;
+
+        &:hover {
+            background: indianred;
+            transform: scale(1.2);
+        }  
+
+        @media only screen and (max-width: 650px) {
+            display: none;
+        }
+    }
+
+
+    .navbar {
+        width: 42%;
+
+        @media only screen and (max-width: 1200px) {
+            width: 45%;
+        }
+
+        @media only screen and (max-width: 950px) {
+            display: none;
+        }
+    }
+
+
+    .navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li a {
+        font-family: 'FuturaDemiC';
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+
+        &.active {
+            color: $default--orange;
+        }
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        padding: 0;
+    }
+
+    @media only screen and (max-width: 950px) {
+        justify-content: space-around;
+    }
+}

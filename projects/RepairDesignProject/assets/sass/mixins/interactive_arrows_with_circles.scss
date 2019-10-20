@@ -1,0 +1,19 @@
+@mixin interactive_arrows_with_circles {
+    height: 13.3px;
+    width: 287px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .interactive_circle {
+        height: 9.6px;
+        width: 9.6px;
+        border-radius: 100%;
+        background-color: #FFFFFF;
+        opacity: .3;
+
+        &.active {
+            opacity: 1;
+        }
+    }    
+}

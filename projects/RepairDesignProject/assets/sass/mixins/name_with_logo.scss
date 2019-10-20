@@ -1,0 +1,45 @@
+@mixin name_with_logo {
+    width: 257px;
+    height: 68.8px;
+
+    margin: 0px auto;
+
+    h3 {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #181818;
+    }
+
+    img {
+        height: 29px;
+        width: 29px;
+        margin-top: 13px;
+        margin-left: calc((100% - 28px) / 2.0 );
+    }
+
+    hr {
+        position: relative;
+    }
+
+    hr.first {
+        left: 30%;
+        top: 29px;
+    }
+
+    hr.second {
+        left: 57%;
+        top: 27px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        h3 {
+            font-size: 22px;
+        }        
+    }
+}
