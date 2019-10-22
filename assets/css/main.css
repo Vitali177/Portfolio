@@ -254,6 +254,33 @@ a.project-ref {
 
 
 @media only screen and (max-width: 480px) {
+  
+    /*  */
+  .control {
+    display: none;
+  }
+
+  .items-container {
+    height: 690px;
+  }
+
+  .description {
+    margin: 0;
+  }
+
+  .mobile_desc {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+  .info-help {
+    top: 480px;
+  }  
+
+  /*  */
+  
+  
 
   header {
     margin-top: 75%;
