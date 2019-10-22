@@ -123,6 +123,16 @@ const swipedetect = (el) => {
 	surface.addEventListener('mouseup', function(e){
 		distX = e.pageX - startX;
 		distY = e.pageY - startY;
+		
+		if (distX === 0 && distY === 0 && e.target.className === 'project-image') {
+	
+			if (e.target.alt === 'repair_image')
+				window.location.href = 'projects/RepairDesignProject/test.html'; 
+			else if (e.target.alt === 'theyalow_image')
+				window.location.href = 'projects/THEYALOW/test2.html';
+		}
+
+		
 		elapsedTime = new Date().getTime() - startTime;
 		if (elapsedTime <= allowedTime){
 			if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){
@@ -171,15 +181,14 @@ const swipedetect = (el) => {
 			//console.log(distX, distY);
 			//console.log(touchobj.pageY);
 
-			// если пользователь нажимает не на картинку, но на нашу карусель
-			if (touchobj.pageY < 1240 || touchobj.pageY > 1680) return;
-
-			if (distX === 0 && distY === 0) {
-				if (currentItem === 0) 
-					window.location.href = 'projects/RepairDesignProject/test.html';
-				else if (currentItem === 1) 
-				window.location.href = 'projects/THEYALOW/test2.html';
+			if (distX === 0 && distY === 0 && e.target.className === 'project-image') {
+	
+				if (e.target.alt === 'repair_image')
+					window.location.href = 'projects/RepairDesignProject/test.html'; 
+				else if (e.target.alt === 'theyalow_image')
+					window.location.href = 'projects/THEYALOW/test2.html';
 			}
+
 
 			elapsedTime = new Date().getTime() - startTime;
 			if (elapsedTime <= allowedTime){
